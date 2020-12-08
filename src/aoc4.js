@@ -16,7 +16,6 @@ const aoc4 = (requiredFields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
   }, [''])
   if (!discretePassports[0]) discretePassports.shift()
 
-
   const validPassports = discretePassports.filter(passport => {
     const fields = passport.split(' ')
     const fieldsAsObj = fields.reduce((accum, curr) => {
